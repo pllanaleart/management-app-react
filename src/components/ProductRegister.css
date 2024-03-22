@@ -1,0 +1,66 @@
+.product-register-container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  width: 30vw;
+  gap: 10vh;
+  background-color: #f9f8f8;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.flex-input {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.flex-input input {
+  height: 6vh;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 1%;
+}
+.register-buttons-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-top: 10%;
+}
+#description-register {
+  border: none;
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.register-buttons-group button {
+  width: 10vw;
+  color: #f9f8f8;
+  height: 5vh;
+  border: none;
+  box-shadow: "0px 0px 20px rgba(0, 0, 0, 0.9)";
+  border-radius: 15px;
+}
+
+#submit-register-btn {
+  background-color: #698f3f;
+}
+#close-register-btn {
+  width: 6vw;
+  background-color: #d72638;
+}
+#close-register-btn:hover {
+  background-color: #05299e;
+}
+#submit-register-btn:hover {
+  background-color: #05299e;
+}

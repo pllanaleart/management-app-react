@@ -1,0 +1,6 @@
+.content-container {
+  background-color: #171738;
+  background-image: url("../assets/background-image.png");
+  border-left: 3px solid #05299e;
+  max-height: 100vh;
+}

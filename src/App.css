@@ -1,0 +1,9 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.2fr 5fr;
+  grid-template-rows: 1fr;
+  max-height: 100vh;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}

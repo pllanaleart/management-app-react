@@ -1,0 +1,57 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  background-color: #171738;
+  max-height: 100%;
+  min-height: 100vh;
+  border: 0;
+}
+.sidebar-container a img {
+  height: 3vh;
+  margin-right: 10px;
+}
+
+.sidebar-container a {
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  font-size: 1.4rem;
+  color: #f9f8f8;
+  text-decoration: none;
+  padding-left: 5px;
+}
+.sidebar-container ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: auto;
+}
+.sidebar-container ul li:hover {
+  background-color: #05299e;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.active {
+  /* DUHET me bo pseudo element :active */
+  background-color: #05299e;
+  border-radius: 15px;
+  margin: 5px;
+}
+.sidebar-container ul li {
+  padding: 1%;
+  margin: 5px;
+}
+.sidebar-container ul li a {
+  font-size: smaller;
+}
+.sidebar-container hr {
+  border: 1px solid #05299e;
+  width: 85%;
+}

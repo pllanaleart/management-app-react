@@ -1,0 +1,128 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2vw;
+  max-height: 80vh;
+  min-height: 60vh;
+  overflow-y: auto;
+  padding: 2%;
+  padding-top: 0;
+  border: 2px solid #171738;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add box shadow for popped effect */
+  background-color: rgba(23, 23, 56, 0.92);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 90%;
+}
+#action-container {
+  display: flex;
+  gap: 3px;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #05299e;
+}
+table {
+  border-collapse: collapse; /* Collapse the borders so they are shared between cells */
+}
+/* Style for table cells */
+thead {
+  background-color: #171738;
+  position: sticky;
+
+  top: 0;
+}
+th,
+td {
+  border: 1px solid #05299e;
+  border-width: 0 0.9px 0.9px 0; /* Set a solid border for all cells */
+  padding: 10px;
+  text-align: center;
+  color: #f9f8f8; /* Add some padding for better readability */
+}
+/* Remove borders from the outer edges */
+table th:first-child,
+table td:first-child {
+  border-left: none;
+  /* Remove left border for first column */
+}
+table th:last-child,
+table td:last-child {
+  border-right: none; /* Remove right border for last column */
+}
+table tr:first-child th {
+  border-top: none; /* Remove top border for first row */
+}
+table tr:last-child td {
+  border-bottom: none; /* Remove bottom border for last row */
+}
+th:nth-child(1) {
+  width: 15vw;
+}
+th:nth-child(2) {
+  width: 35vw;
+}
+th:nth-child(3) {
+  width: 15vw;
+}
+th:nth-child(4) {
+  width: 7vw;
+}
+th:nth-child(5) {
+  width: 7vw;
+}
+th:nth-child(6) {
+  width: 10vw;
+}
+
+#updatebtn {
+  border: none;
+  border-radius: 5px;
+  color: #f9f8f8;
+  background-color: #698f3f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for popped effect */
+  transition: box-shadow 0.3s ease;
+  width: 5vw;
+  height: 3vh;
+}
+#action-container button:hover {
+  border-radius: 5px;
+  background-color: #05299e;
+}
+#deletebtn {
+  border: none;
+  border-radius: 5px;
+  color: #f9f8f8;
+  background-color: #d72638;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for popped effect */
+  transition: box-shadow 0.3s ease;
+  width: 5vw;
+  height: 3vh;
+}
+.page-button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.page-button img {
+  height: 5vh;
+  width: 2vw;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.page-button img:hover {
+  background-color: #05299e;
+}
+.btn-position {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  justify-self: flex-end;
+  margin-top: auto;
+}

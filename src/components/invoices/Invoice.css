@@ -1,0 +1,179 @@
+.invoice-container {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  background-color: #f9f8f8;
+  max-height: 100vh;
+  padding: 2%;
+  gap: 1%;
+}
+.new-invoice-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5%;
+  padding: 2%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Box shadow to create a card-like effect */
+  transition: box-shadow 0.3s ease;
+}
+
+.search-product-toAdd-container {
+  display: flex;
+  gap: 2%;
+  margin: 2%;
+}
+#search-product-toAdd {
+  width: 70%;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+#search-product-toAdd:focus {
+  outline: none;
+}
+.barcode-btn {
+  background-color: #171738;
+  border: none;
+  border-radius: 3px;
+  padding: 1%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.barcode-btn img {
+  width: 2vw;
+  max-width: 5vw;
+  max-height: 3vh;
+}
+.invoice-info-container {
+  display: grid;
+  gap: 2%;
+  grid-template-columns: 1fr 1fr;
+  max-height: 40vh;
+  min-height: fit-content;
+  margin: 2%;
+}
+.invoice-info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 1%;
+  margin: 1px;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid #171738;
+}
+#invoice-table {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  min-height: 20vh;
+  max-height: 30vh;
+  margin: 2%;
+}
+#invoice-table tr {
+  width: 100%;
+}
+.invoice-info-group h4,
+.invoice-info-group h5,
+.invoice-info-group h6 {
+  margin: 1px;
+}
+.invoice-info-group h5 {
+  min-height: 5vh;
+}
+.invoice-info-group h6 {
+  min-height: 5vh;
+}
+.invoice-table-container {
+  margin: 0;
+  max-height: 100%;
+  min-height: 100%;
+
+  padding-top: 0;
+  border: 2px solid #171738;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add box shadow for popped effect */
+  background-color: rgba(23, 23, 56, 0.92);
+}
+.new-invoice-container h3 {
+  margin: 1%;
+}
+.invoice-table-container tr {
+  width: 100%;
+}
+.invoice-create-container {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+  justify-content: flex-end;
+}
+.invoice-create-container button {
+  margin: 2%;
+  border: none;
+  padding: 2%;
+  color: #f9f8f8;
+  background-color: #05299e;
+  border-radius: 3px;
+}
+.invoice-create-container button:hover {
+  border: none;
+  background-color: #698f3f;
+}
+#delete-product-invoice-btn {
+  max-width: 1vw;
+  min-width: 2vw;
+  max-height: 2vh;
+  margin: 0;
+  padding: 0;
+}
+.invoices-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 91vh;
+  margin: 0;
+
+  padding: 2%;
+  gap: 1%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Box shadow to create a card-like effect */
+  transition: box-shadow 0.3s ease;
+}
+.invoice-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  overflow-y: auto;
+}
+.invoice-card-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 20vh;
+  gap: 2%;
+  background-color: #f9f8f8;
+  padding: 1%;
+  margin: 1%;
+  border: 2px solid #171738;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add box shadow for popped effect */
+}
+.invoice-card-container h5,
+.invoice-card-container h6 {
+  margin: 0;
+  padding: 0;
+}
+.invoice-card-container > div > img {
+  max-height: 3vh;
+  max-width: 3vw;
+  margin-left: auto;
+}
+#h4-allInvoices-title {
+  position: sticky; /* Position title absolutely */
+  top: 0; /* Position title at the top of the container */
+  left: 0; /* Align title to the left */
+  margin: 0; /* Remove any default margin */
+  padding: 8px; /* Add padding as needed */
+  background-color: #f9f8f8; /* Example background color for visualization */
+  width: 100%; /* Make title width same as container */
+}
+.decorative-container {
+  display: flex;
+  gap: 2%;
+}

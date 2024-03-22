@@ -1,0 +1,116 @@
+.invoice-modal-container {
+  display: flex;
+
+  justify-content: center;
+  padding: 2%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.invoice-template-container {
+  display: flex;
+  width: 50%;
+  max-width: 50%;
+  height: 90%;
+  max-height: 90%;
+  flex-direction: column;
+  gap: 1%;
+  padding: 1%;
+  margin: 10px;
+  background-color: #f9f8f8;
+
+  border-radius: 20px;
+}
+.invoice-template-container h3 {
+  margin: 0;
+  padding-left: 3%;
+}
+.company-card {
+  display: flex;
+  border: 2px solid #171738;
+  padding: 2%;
+  flex-direction: column;
+  gap: 2%;
+  width: 40vw;
+  border-radius: 10px;
+}
+.company-card h3,
+.company-card h4 {
+  padding: 2%;
+  margin: 0;
+}
+.invoice-info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
+.invoice-template-table-container {
+  max-height: 50vh;
+  height: 50vh;
+  border-radius: 10px;
+  width: 95%;
+  margin: 2%;
+}
+
+.invoice-template-table-container th,
+.invoice-template-table-container td {
+  background-color: #f9f8f8;
+  border: none;
+  border-bottom: 1px solid #171738;
+  color: #171738;
+}
+.invoice-template-table-container th {
+  background-color: #171738;
+  color: #f9f8f8;
+}
+.invoice-template-table-container th:nth-child(1) {
+  width: 35vw;
+}
+.invoice-template-table-container th:nth-child(2) {
+  width: 10vw;
+}
+.invoice-template-table-container th:nth-child(3) {
+  width: 10vw;
+}
+.invoice-template-table-container th:nth-child(4) {
+  width: 10vw;
+}
+.invoice-template-table-container th:nth-child(5) {
+  width: 12vw;
+}
+.total-price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 3%;
+  margin-top: auto;
+}
+.total-price-container h4 {
+  margin: 1%;
+}
+.print-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  padding: 3%;
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  .print-container {
+    display: none;
+  }
+  body {
+    margin: 0;
+  }
+  .invoice-template-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .pageNumber {
+    display: none;
+  }
+}
